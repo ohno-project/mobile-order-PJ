@@ -1,3 +1,3 @@
 print("Hello Python!")
 #コメント
-#コメン
+#コメンうひじょ
