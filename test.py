@@ -1,3 +1,3 @@
 print("Hello Python!")
 #コメント
-#コメント2
+#コメント
