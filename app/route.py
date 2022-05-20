@@ -1,8 +1,4 @@
-from flask import (
-    Flask, render_template, url_for, request, redirect, flash
-)
-from flask_mail import Mail, Message
-from email_validator import validate_email, EmailNotValidError
+from flask import Flask, render_template, url_for, request, redirect, flash
 import logging
 import os
 
@@ -23,53 +19,53 @@ app.logger.debug("debug")
 
 
 # URLと実行する関数をマッピングする
-@app.route('/home', method=['GET', 'POST'])
-def index():
+@app.route('/home', methods=['GET', 'POST'])
+def home():
     return render_template('home.html')
 
 
-@app.route('/ippin', method=['GET', 'POST'])
-def index():
+@app.route('/ippin', methods=['GET', 'POST'])
+def ippin():
     return render_template('ippin.html')
 
 
-@app.route('/teisyoku', method=['GET', 'POST'])
-def index():
+@app.route('/teisyoku', methods=['GET', 'POST'])
+def teisyoku():
     return render_template('teisyoku.html')
 
 
-@app.route('/yuzen', method=['GET', 'POST'])
-def index():
+@app.route('/yuzen', methods=['GET', 'POST'])
+def yuzen():
     return render_template('yuzen.html')
 
 
-@app.route('/course', method=['GET', 'POST'])
-def index():
+@app.route('/course', methods=['GET', 'POST'])
+def course():
     return render_template('course.html')
 
 
-@app.route('/alcohol', method=['GET', 'POST'])
-def index():
+@app.route('/alcohol', methods=['GET', 'POST'])
+def alcohol():
     return render_template('alcohol.html')
 
 
-@app.route('/soft-drink', method=['GET', 'POST'])
-def index():
+@app.route('/soft-drink', methods=['GET', 'POST'])
+def soft_drink():
     return render_template('soft-drink.html')
 
 
-@app.route('/service', method=['GET', 'POST'])
-def index():
+@app.route('/service', methods=['GET', 'POST'])
+def service():
     return render_template('service.html')
 
 
-@app.route('/order-cart', method=['GET', 'POST'])
-def index():
+@app.route('/order-cart', methods=['GET', 'POST'])
+def order_cart():
     return render_template('rder-cart.html')
 
 
-@app.route('/order-history', method=['GET', 'POST'])
-def index():
+@app.route('/order-history', methods=['GET', 'POST'])
+def order_history():
     return render_template('order-history.html')
 
 
